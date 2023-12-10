@@ -1,0 +1,242 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@import url('https://fonts.googleapis.com/css2?family=Public+Sans:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+:root {
+  --foreground-rgb: 255, 255, 255;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 0, 0, 0;
+    --background-start-rgb: 255, 255, 255;
+    --background-end-rgb: 255, 255, 255;
+    --Blue: #002147
+  }
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: rgb(var(--background-start-rgb));
+}
+
+section{
+  display: flex;
+  /* padding: 0px 64px; */
+  align-items: center;
+}
+.title-blue{
+  color: #002147;
+  /* Heading/H1 */
+  font-family: 'Public Sans', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%; /* 27px */
+}
+.title-white{
+  color: #ffffff;
+  /* Heading/H1 */
+  font-family: 'Public Sans', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%; /* 27px */
+}
+.text1{
+  color: var(--White, #FFF);
+  font-family: 'Roboto', sans-serif;;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%; /* 27px */
+}
+.text-carousel{
+  color: gba(0, 33, 71, 0.85);
+  font-family: 'Roboto', sans-serif;;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%; /* 27px */
+}
+
+
+#section1{
+  background: linear-gradient(0deg, rgba(0, 33, 71, 0.85) 0%, rgba(0, 33, 71, 0.85) 100%), url("/public/images/background1.png"), lightgray 50% / cover no-repeat;
+}
+#section3{
+  background: linear-gradient(0deg, rgba(0, 33, 71, 0.85) 0%, rgba(0, 33, 71, 0.85) 100%), url("/public/images/background1.png"), lightgray 50% / cover no-repeat;
+  color: #ffffff;
+  font-family: 'Public Sans', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 120%; /* 67.2px */
+}
+#section3 .section3-title{
+  /* Heading/H4 */
+  margin-top: 20px;
+  font-family: 'Public Sans', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 130%; /* 41.6px */
+}
+#section3 .section3-text{
+  /* Heading/H4 */
+  font-family: 'Roboto', sans-serif;;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%; /* 24px */
+}
+#section2{
+  background: white;
+  color: #002147;
+  text-align: center;
+  /* Heading/H1 */
+  font-family: 'Public Sans', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 120%; /* 67.2px */
+}
+
+#section7{
+  background: #F4F4F4;
+  color: #002147;
+  text-align: center;
+  /* Heading/H1 */
+  font-family: 'Public Sans', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 120%; /* 67.2px */
+}
+
+#section5 {
+  background: linear-gradient(0deg, rgba(0, 33, 71, 0.85) 0%, rgba(0, 33, 71, 0.85) 100%), url("/public/images/background1.png"), lightgray 50% / cover no-repeat;
+  color: #ffffff;
+  font-family: 'Public Sans', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 120%;
+}
+
+#section4 .title{
+  background: white;
+  color: #002147;
+  /* Heading/H1 */
+  font-family: 'Public Sans', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%; /* 27px */
+}
+#section4 .text{
+  background: white;
+  color: #002147;
+  text-align: start;
+  /* Heading/H1 */
+  font-family: 'Public Sans', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%; /* 67.2px */
+} 
+
+#section5 .title{
+  color: #002147;
+  /* Heading/H1 */
+  font-family: 'Public Sans', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%; /* 27px */
+}
+#section5 .text{
+  color: #ffffff;
+  /* Heading/H1 */
+  font-family: 'Public Sans', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%; /* 67.2px */
+} 
+
+#section6 .title{
+  color: #002147;
+  /* Heading/H1 */
+  font-family: 'Public Sans', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%; /* 27px */
+}
+#section6 .text{
+  color: #ffffff;
+  /* Heading/H1 */
+  font-family: 'Public Sans', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%; /* 67.2px */
+} 
+#section6 #bullet-title{
+  color: #002147;
+  font-family: 'Public Sans', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 140%; /* 33.6px */
+}
+#section6 #bullet-text{
+  color: #002147;
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%; /* 24px */
+}
+#section8 {
+  background: linear-gradient(0deg, rgba(0, 33, 71, 0.85) 0%, rgba(0, 33, 71, 0.85) 100%), url("/public/images/background1.png"), lightgray 50% / cover no-repeat;
+  color: #ffffff;
+  font-family: 'Public Sans', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 120%;
+}
+section #heading{
+  align-self: stretch;
+  color: var(--White, #FFF);
+  font-family: 'Public Sans', sans-serif;
+  line-height: 120%;
+  font-style: normal;
+  font-weight: 700;
+}
+section #text1{
+  
+  align-self: stretch;
+  color: var(--White, #FFF);
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%; /* 27px */
+}
+
+section #text2{
+  color: var(--White, #FFF);
+  font-family: 'Roboto', sans-serif;;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%; /* 27px */
+}
+
+section #button1{
+  border: 1px solid #BB133E;
+  background: #BB133E;
+}
+
+section #button2{
+  border: 1px solid var(--White, #FFF);
+  background-color: transparent;
+}
+
+section #button3{
+  /* border: 1px solid var(--White, #FFF); */
+  background-color: transparent;
+}
+
+#button4{
+  border: 1px solid rgba(0, 33, 71, 0.85);
+  background-color: transparent;
+}
