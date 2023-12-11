@@ -97,11 +97,11 @@ export default function Home() {
           </button>
       </section>
       <section className='flex flex-col lg:flex-row justify-between items-center lg:items-start  w-full h-full bg-white lg:p-20 pt-20 px-4' id='section4'>
-        <Image quality={50} alt='mertz' width={1000} height={500} className="hidden lg:block"
+        <Image quality={50} alt='mertz' width={700} height={400} className="hidden lg:block"
               style={{height:'70vh',width:'30vw',objectFit:'cover'}}
               src={"/images/mertz.png"}
           />
-        <Image quality={50} alt='mertz' width={1000} height={500} className="lg:hidden"
+        <Image quality={50} alt='mertz' width={700} height={400} className="lg:hidden"
             style={{height:'30vh',width:'150%',objectFit:'cover'}}
             src={"/images/mertz.png"}
         />
