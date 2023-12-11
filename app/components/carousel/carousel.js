@@ -16,7 +16,7 @@ import Image from 'next/image';
 let slideContent = [
   <SwiperSlide key={1}>
     <div className='flex flex-col justify-between items-center h-5/6 w-full'>
-      <div className='text-carousel mb-8'>
+      <div className='text-carousel mb-8 lg:h-56 overflow-ellipsis'>
       “Mike helped me save a little over $100,000 on taxes over the years. He now has me funded my health savings account, IRA account, health insurance for my whole family, and now working on a will. My financial life has been totally organized and sorted by Mike.”
       </div>
       <div className='default-img' >
@@ -34,7 +34,7 @@ let slideContent = [
   </SwiperSlide>,
   <SwiperSlide key={2}>
     <div className='flex flex-col justify-between items-center h-5/6 w-full'>
-      <div className='text-carousel mb-8'>
+    <div className='text-carousel mb-8 lg:h-56 overflow-ellipsis'>
        &quot;I was able to save  $12k on 1040X Amended Tax return  just by having to answer the right questions on why 2017 was not filed as an expat when I left the US to the Philippines on Jan 6, 2017!  &quot;
       </div>
       <div className='default-img' >
@@ -52,7 +52,7 @@ let slideContent = [
   </SwiperSlide>,
   <SwiperSlide key={3}>
     <div className='flex flex-col justify-between items-center h-5/6 w-full'>
-      <div className='text-carousel mb-8'>
+    <div className='text-carousel mb-8 lg:h-56 overflow-ellipsis'>
       "I’ve been a client of Mike since 2018 and I am really satisfied with their work, I was able to claim USD 8k in my Federal and USD 1k in my State tax refund."
       </div>
       <div className='default-img' >
@@ -70,7 +70,7 @@ let slideContent = [
   </SwiperSlide>,
   <SwiperSlide key={4}>
     <div className='flex flex-col  justify-between items-center h-5/6 w-full'>
-      <div className='text-carousel mb-8'>
+    <div className='text-carousel mb-8 lg:h-56 overflow-ellipsis'>
       "Michael is very helpful in preparing all of my taxes and dealing with IRS directly to make sure I didn't have to pay undue fees. he also helped advise on the optimal tax structure for me as expat in Asia as well. I would recommend Michael for other expats."
       </div>
       <div className='default-img' >

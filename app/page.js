@@ -14,8 +14,8 @@ export default function Home() {
         backgroundRepeat: "no-repeat",
         }}  className='flex flex-col items-start w-full h-full lg:p-20 py-20 px-4' >
         <div className=' lg:py-40' >
-          <p id='heading' className=' lg:w-5/12 lg:text-6xl text-3xl'>
-            Streamline your <br/>Cross-border Taxes, Maximize Savings, and Embrace your Expat Life
+          <p id='heading' className=' lg:w-8/12 lg:text-6xl text-3xl'>
+            Streamline your <br/>Cross-border Taxes, <br/>Maximize Savings, and Embrace your Expat Life
           </p>
           <p id='text1' className='lg:mt-10 lg:w-4/12 lg:text-2xl text-sm mt-5'>
             2 Countries in 1 Tax Preparation for US Expats: Simplify, Save, and Stay Compliant.
@@ -45,7 +45,7 @@ export default function Home() {
           </p>
       </section>
       <section className='flex flex-col items-center w-full h-full bg-white lg:p-20 py-20 px-4 ' id='section3'>
-          <p className=' lg:w-5/12 lg:text-6xl text-3xl' >
+          <p className=' lg:w-5/12 lg:text-6xl text-3xl text-center' >
           What Should You Expect
           </p>
           <div className='flex flex-col lg:flex-row  w-full justify-between mt-20'>
@@ -97,15 +97,15 @@ export default function Home() {
           </button>
       </section>
       <section className='flex flex-col lg:flex-row justify-between items-center lg:items-start  w-full h-full bg-white lg:p-20 pt-20 px-4' id='section4'>
-        <Image alt='mertz' width={150} height={50} className="hidden lg:block"
+        <Image alt='mertz' width={1000} height={500} className="hidden lg:block"
               style={{height:'70vh',width:'30vw',objectFit:'cover'}}
               src={"/images/mertz.png"}
           />
-        <Image alt='mertz' width={150} height={50} className="lg:hidden"
+        <Image alt='mertz' width={1000} height={500} className="lg:hidden"
             style={{height:'30vh',width:'150%',objectFit:'cover'}}
             src={"/images/mertz.png"}
         />
-        <div className='flex flex-col w-full lg:w-8/12 m-20'>
+        <div className='flex flex-col w-full lg:w-8/12 lg:m-10 m-20'>
             <div className='title lg:text-6xl text-4xl' >
               Meet our Founder
             </div>
@@ -122,13 +122,13 @@ export default function Home() {
       
       </section>
       <section className='flex flex-col items-center w-full h-full bg-white lg:p-20 py-20 px-4' id='section5'>
-          <p className=' lg:w-5/12 lg:text-6xl text-3xl' >
+          <p className=' lg:w-5/12 lg:text-6xl text-3xl text-center' >
             $1,000,000+ Tax Savings
           </p>
           <p className='text lg:w-5/12 lg:text-sm text-sm text-center mt-10' >
             Our team managed to save $1,000,000+ in taxes for our US Expat clients for the Year 2023 alone.
           </p>
-          <div className='flex flex-row  justify-between w-full lg:w-3/12 lg:justify-evenly'>
+          <div className='flex flex-row  justify-between w-full lg:w-4/12 lg:justify-evenly'>
             <button id='button1' type="button" className="px-5 py-4 mt-24 text-white hover:text-white focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800" >
               Save Taxes with Us
             </button>
@@ -140,8 +140,8 @@ export default function Home() {
       </section>
       <section className='flex lg:flex-row flex-col items-start w-full h-full bg-white lg:p-20 py-20 px-4' id='section6'>
           <div className='flex flex-col lg:w-6/12'>
-            <p className='title lg:text-5xl text-3xl' >
-              How Can I Avail the 2-in-1<br className='hidden lg:block'/> Tax Preparation Services?
+            <p className='title lg:text-6xl text-3xl font-extrabold' >
+              How Can I Avail the 2-in-1<br className='hidden lg:block'/>Tax Preparation Services?
             </p>
             <div className='flex lg:flex-row flex-col justify-center w-full lg:justify-start'>
               <button id='button1' type="button" className="px-10 py-4 lg:mt-24 mt-10 text-white hover:text-white focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800" >
@@ -352,7 +352,7 @@ export default function Home() {
                 Trust our established system, refined over 16 years and serving 6000+ clients globally.
                 </div>
               </div>
-              <div className='flex flex-row  justify-between items-start w-full lg:w-5/12 lg:justify-evenly'>
+              <div className='flex flex-row  justify-between items-start w-full lg:w-8/12 lg:justify-evenly'>
                 <button id='button1' type="button" className="px-5 py-4 mt-24 text-white hover:text-white focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800" >
                   Work with Us
                 </button>
@@ -375,8 +375,8 @@ export default function Home() {
           </div>
           
       </section>
-      <section className='flex flex-col lg:flex-row justify-between items-center lg:items-center  w-full h-full bg-white lg:p-20 pt-20 lg:px-96' id='section7'>
-          <div className='flex flex-col justify-center items-center w-full lg:m-18 '>
+      <section className='flex flex-col lg:flex-row justify-between items-center lg:items-center  w-full h-full bg-white lg:p-20 pt-20 lg:px-50' id='section7'>
+          <div className='flex flex-col justify-center items-center w-full lg:m-15 '>
               <div className='title-blue lg:text-6xl text-3xl' style={{color:'#002147'}}>
                   FAQs
               </div>
@@ -440,7 +440,7 @@ export default function Home() {
           <div className=' lg:text-lg font-light text-center mt-10'>
             Complete our intake form to enjoy our streamlined services especially tailored to US Expats around the world.
           </div>
-          <div className='flex flex-row  justify-between w-full lg:w-3/12 lg:justify-evenly'>
+          <div className='flex flex-row  justify-between w-full lg:w-4/12 lg:justify-evenly'>
             <button id='button1' type="button" className="px-8 py-4 mt-24 text-white hover:text-white focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800" >
               Get Started
             </button>
