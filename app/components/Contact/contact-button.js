@@ -2,7 +2,7 @@
 import React from 'react';
 import Image from 'next/image'
 
-const ContactButton = () => {
+const ContactButton = ({showArrow=true}) => {
   const email = 'mertzlifemarketing@gmail.com';
 
   const handleContactClick = () => {
@@ -18,13 +18,7 @@ const ContactButton = () => {
       onClick={handleContactClick}
     >
       Contact Us
-      <Image
-        width={50}
-        height={50}
-        alt='arrow-right'
-        src='images/icons/elements/arrow-right.svg'
-        style={{ height: '30px', marginLeft: '10px', color: '#002147' }}
-      />
+      {!showArrow ? <></> : <Image alt='arrow-right' width={50} height={50} src='images/icons/elements/arrow-right.svg' style={{ height: '30px', paddingTop: '3px', marginLeft: '15px' }} />}
     </button>
   );
 };

@@ -400,7 +400,7 @@ export default function Home() {
               <div className='text-sm mt-3 font-light mx-12' >
                 Our team is one email away if you have more questions about our services.
               </div>
-              <ContactButton/>
+              <ContactButton showArrow={false}/>
               {/* <Link  id='button4' type="button" className="flex flex-row justify-center items-center py-4 mt-14 w-6/12 mb-32 lg:w-2/12" style={{color:"#002147"}}>
                   Contact Us <Image width={50} height={50} alt='arrow-right' src='images/icons/elements/arrow-right.svg' style={{height:'30px',marginLeft:'10px', color:'#002147'}}/>
               </Link> */}
