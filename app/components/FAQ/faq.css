@@ -1,0 +1,4 @@
+.accordion__button::before {
+    margin-right: 16px; /* You can adjust this value based on your preference */
+    display:none;
+  }

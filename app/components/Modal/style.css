@@ -1,0 +1,46 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Public+Sans:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+#title{
+    color: #002147;
+    /* Heading/H1 */
+    font-family: 'Public Sans', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 150%; /* 27px */
+}
+
+#text{
+    color: #002147;
+    /* Heading/H1 */
+    /* Text/Medium/Normal */
+    font-family: 'Roboto', sans-serif;;
+    /* font-size: 18px; */
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 27px */
+}
+
+#button-go{
+    border: 1px solid #BB133E;
+    background: #BB133E;
+    font-family: 'Roboto', sans-serif;;
+    /* font-size: 16px; */
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 24px */
+}
+
+#button-give-up{
+    color: #002147;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Roboto', sans-serif;;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 24px */
+    border: 1px solid var(--Blue, #002147);
+
+}

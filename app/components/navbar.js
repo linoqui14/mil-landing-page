@@ -1,18 +1,13 @@
-import { Fragment } from 'react'
-import { Disclosure, Menu, Transition } from '@headlessui/react'
-import { Bars3Icon, BellIcon, XMarkIcon } from '@heroicons/react/24/outline'
+"use client"
 import Image from 'next/image'
-const navigation = [
-  { name: 'Dashboard', href: '#', current: true },
-  { name: 'Team', href: '#', current: false },
-  { name: 'Projects', href: '#', current: false },
-  { name: 'Calendar', href: '#', current: false },
-]
 
-function classNameNames(...classNamees) {
-  return classNamees.filter(Boolean).join(' ')
-}
 
+
+const email = 'mertzlifemarketing@gmail.com';
+
+const handleContactClick = () => {
+  window.location.href = `mailto:${email}`;
+};
 export default function Navbar() {
   return (
     <nav className="bg-white">
@@ -30,7 +25,7 @@ export default function Navbar() {
           
         </div>
         <div className="hidden sm:flex absolute inset-y-0 right-0 items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
-          <button type="button" className="px-5 py-3 text-white hover:text-white focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800" style={{backgroundColor:"#BB133E"}}>
+          <button onClick={handleContactClick} type="button" className="px-5 py-3 text-white hover:text-white focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800" style={{backgroundColor:"#BB133E"}}>
             Contact Us
           </button>
         </div>

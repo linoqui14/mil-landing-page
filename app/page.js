@@ -1,9 +1,17 @@
+
 import Image from 'next/image'
 import Navbar from './components/navbar'
 import SliderPerview from './components/carousel/carousel'
 import backgroundImage from "../public/images/background1.png";
-
+import FAQs from './components/FAQ/faq';
+import Link from 'next/link';
+import ExitModal from './components/Modal/exit-modal';
+import ContactButton from './components/Contact/contact-button';
+import ContactButton2 from './components/Contact/contact-button2';
 export default function Home() {
+  const taxDome = "https://mertzinternationallimited.taxdome.com/app/settings/organizer_templates/90212/edit?return_url=https%3A%2F%2Fmertzinternationallimited.taxdome.com%2Fapp%2Fsettings%2Forganizer_templates"
+  const facebook = "https://www.facebook.com/mertzinternational"
+  const linkin = "https://www.linkedin.com/company/mertz-international-limited/"
   return (
     <main>
       <Navbar/>
@@ -26,12 +34,12 @@ export default function Home() {
           </p>
 
           <div className='flex flex-row lg:justify-start sm:justify-between'>
-            <button  id='button1'type="button" className="px-5 py-3 mt-10 mr-5 text-white hover:text-white focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800" style={{backgroundColor:"#BB133E"}}>
+            <Link href={taxDome} id='button1'type="button"  className="px-5 py-3 mt-10 mr-5 text-white hover:text-white focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800" style={{backgroundColor:"#BB133E"}}>
               Get Started
-            </button>
-            <button id='button2' type="button" className="px-5 py-3 mt-10 text-white hover:text-white focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800" >
+            </Link>
+            <Link href={"#section2"} id='button2' type="button" className="px-5 py-3 mt-10 text-white hover:text-white focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800" >
               Learn More
-            </button>
+            </Link>
           </div>
         </div>
         
@@ -92,9 +100,9 @@ export default function Home() {
               </div>
             </div>
           </div>
-          <button id='button2' type="button" className="px-5 py-4 mt-24 text-white hover:text-white focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800" >
+          <Link href={taxDome} id='button2' type="button" className="px-5 py-4 mt-24 text-white hover:text-white focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800" >
             Work With Us
-          </button>
+          </Link>
       </section>
       <section className='flex flex-col lg:flex-row justify-between items-center lg:items-start  w-full h-full bg-white lg:p-20 pt-20 px-4' id='section4'>
         <Image quality={50} alt='mertz' width={700} height={400} className="hidden lg:block"
@@ -129,12 +137,12 @@ export default function Home() {
             Our team managed to save $1,000,000+ in taxes for our US Expat clients for the Year 2023 alone.
           </p>
           <div className='flex flex-row  justify-between w-full lg:w-4/12 lg:justify-evenly'>
-            <button id='button1' type="button" className="px-5 py-4 mt-24 text-white hover:text-white focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800" >
+            <Link href={taxDome} id='button1' type="button" className="px-5 py-4 mt-24 text-white hover:text-white focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800" >
               Save Taxes with Us
-            </button>
-            <button id='button2' type="button" className="px-5 py-4 mt-24 text-white hover:text-white focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800" >
+            </Link>
+            <Link href={"#section6"} id='button2' type="button" className="px-5 py-4 mt-24 text-white hover:text-white focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800" >
               Our Process
-            </button>
+            </Link>
           </div>
           
       </section>
@@ -143,13 +151,11 @@ export default function Home() {
             <p className='title lg:text-6xl text-3xl font-extrabold' >
               How Can I Avail the 2-in-1<br className='hidden lg:block'/>Tax Preparation Services?
             </p>
-            <div className='flex lg:flex-row flex-col justify-center w-full lg:justify-start'>
-              <button id='button1' type="button" className="px-10 py-4 lg:mt-24 mt-10 text-white hover:text-white focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800" >
+            <div className='hidden lg:flex lg:flex-row flex-col justify-center w-full lg:justify-start'>
+              <Link href={taxDome} id='button1' type="button" className="px-10 py-4 lg:mt-24 mt-10 text-white hover:text-white focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800" >
                   Get Started
-              </button>
-              <button id='button2' type="button" className=" flex flex-row justify-center items-center px-5 py-4 lg:mt-24 hover:text-white focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800" style={{color:"#002147"}}>
-                  Skip on Tax Savings <Image alt='arrow-right' width={50} height={50}src='images/icons/elements/arrow-right.svg' style={{height:'30px',paddingTop:'3px',marginLeft:'15px'}}/>
-              </button>
+              </Link>
+              <ExitModal/>
             </div>
           </div>
 
@@ -215,7 +221,12 @@ export default function Home() {
             </div>
             
           </div>
-          
+          <div className='lg:hidden flex lg:flex-row flex-col justify-center w-full lg:justify-start'>
+              <Link href={taxDome} id='button1' type="button" className="px-10 py-4 lg:mt-24 mt-10 text-white hover:text-white focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800 text" >
+                  Get Started
+              </Link>
+              <ExitModal/>
+            </div>
       </section>
       <section className='flex flex-col lg:flex-row justify-between items-center lg:items-start  w-full h-full bg-white lg:p-20 pt-20 px-4' id='section7'>
 
@@ -353,12 +364,13 @@ export default function Home() {
                 </div>
               </div>
               <div className='flex flex-row  justify-between items-start w-full lg:w-8/12 lg:justify-evenly'>
-                <button id='button1' type="button" className="px-5 py-4 mt-24 text-white hover:text-white focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800" >
+                <Link href={taxDome} id='button1' type="button" className="px-5 py-4 mt-24 text-white hover:text-white focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800" >
                   Work with Us
-                </button>
-                <button id='button3' type="button" className="flex flex-row justify-center items-center  px-5 py-4 mt-24" style={{color:"#FFFFFF"}}>
+                </Link>
+                <ContactButton2/>
+                {/* <button id='button3' type="button" className="flex flex-row justify-center items-center  px-5 py-4 mt-24" style={{color:"#FFFFFF"}}>
                   Contact Us <Image alt='arrow-right' width={50} height={50} src='images/icons/elements/arrow-right-white.svg' style={{height:'30px',marginLeft:'15px', color:'white'}}/>
-                </button>
+                </button> */}
               </div>
             </div>
           </div>
@@ -376,50 +388,11 @@ export default function Home() {
           
       </section>
       <section className='flex flex-col lg:flex-row justify-between items-center lg:items-center  w-full h-full bg-white lg:p-20 pt-20 lg:px-50' id='section7'>
-          <div className='flex flex-col justify-center items-center w-full lg:m-15 '>
+          <div className='flex flex-col justify-center items-center w-full lg:m-15'>
               <div className='title-blue lg:text-6xl text-3xl' style={{color:'#002147'}}>
                   FAQs
               </div>
-              <div className='lg:mt-20 mt-20' style={{ height:'1px',width:'100%',backgroundColor:'#808285'}}></div>
-              <div className='flex flex-row justify-between items-start text-lg lg:text-2xl w-full py-10 px-10' style={{color:'#002147'}}>
-                How does MIL's 2-in-1 Tax Preparation Service work?
-                <Image width={50} height={50}
-                alt='arrow-down'
-                  src='images/icons/elements/arrow-down.svg' 
-                />
-              </div>
-              <div style={{ height:'1px',width:'100%',backgroundColor:'#808285'}}></div>
-              <div className='flex flex-row justify-between items-start text-lg lg:text-2xl w-full py-10 px-10' style={{color:'#002147'}}>
-                What countries do you cover for tax preparation?
-                <Image width={50} height={50}
-                  alt='arrow-down'
-                  src='images/icons/elements/arrow-down.svg' 
-                />
-              </div>
-              <div style={{ height:'1px',width:'100%',backgroundColor:'#808285'}}></div>
-              <div className='flex flex-row justify-between items-start text-lg lg:text-2xl w-full py-10 px-10' style={{color:'#002147'}}>
-                How can I be sure that MIL's service aligns with my specific tax needs?
-                <Image width={50} height={50}
-                  alt='arrow-down'
-                  src='images/icons/elements/arrow-down.svg' 
-                />
-              </div>
-              <div style={{ height:'1px',width:'100%',backgroundColor:'#808285'}}></div>
-              <div className='flex flex-row justify-between items-start text-lg lg:text-2xl w-full py-10 px-10' style={{color:'#002147'}}>
-                What sets MIL's service apart from traditional tax preparers?
-                <Image width={50} height={50}
-                alt='arrow-down'
-                  src='images/icons/elements/arrow-down.svg' 
-                />
-              </div>
-              <div style={{ height:'1px',width:'100%',backgroundColor:'#808285'}}></div>
-              <div className='flex flex-row justify-between items-start text-lg lg:text-2xl w-full py-10 px-10' style={{color:'#002147'}}>
-                How do I get started with MIL's tax preparation service?
-                <Image width={50} height={50}
-                  alt='arrow-down'
-                  src='images/icons/elements/arrow-down.svg' 
-                />
-              </div>
+              <FAQs/>
               <div style={{ height:'1px',width:'100%',backgroundColor:'#808285'}}></div>
               <div className='title-blue lg:text-4xl text-3xl lg:mt-20 mt-10' >
                   Still have a question?
@@ -427,9 +400,10 @@ export default function Home() {
               <div className='text-sm mt-3 font-light mx-12' >
                 Our team is one email away if you have more questions about our services.
               </div>
-              <button id='button4' type="button" className="flex flex-row justify-center items-center py-4 mt-14 w-6/12 mb-32 lg:w-2/12" style={{color:"#002147"}}>
+              <ContactButton/>
+              {/* <Link  id='button4' type="button" className="flex flex-row justify-center items-center py-4 mt-14 w-6/12 mb-32 lg:w-2/12" style={{color:"#002147"}}>
                   Contact Us <Image width={50} height={50} alt='arrow-right' src='images/icons/elements/arrow-right.svg' style={{height:'30px',marginLeft:'10px', color:'#002147'}}/>
-              </button>
+              </Link> */}
           </div>
         
       </section>
@@ -441,12 +415,13 @@ export default function Home() {
             Complete our intake form to enjoy our streamlined services especially tailored to US Expats around the world.
           </div>
           <div className='flex flex-row  justify-between w-full lg:w-4/12 lg:justify-evenly'>
-            <button id='button1' type="button" className="px-8 py-4 mt-24 text-white hover:text-white focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800" >
+            <Link href={taxDome} id='button1' type="button" className="px-8 py-4 mt-24 text-white hover:text-white focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800" >
               Get Started
-            </button>
-            <button id='button2' type="button" className="px-5 py-4 mt-24 text-white hover:text-white focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800" >
+            </Link>
+            <ExitModal  style={{color:"white"}} showArrow = {false}/>
+            {/* <button id='button2' type="button" className="px-5 py-4 mt-24 text-white hover:text-white focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800" >
               Skip on Tax Savings
-            </button>
+            </button> */}
           </div>
       </section>
       <footer className='bg-white flex flex-col justify-center items-center p-10'>
@@ -454,30 +429,37 @@ export default function Home() {
             Complete our intake form to enjoy our streamlined services especially tailored to US Expats around the world.
           </div>
           <div className='flex flex-row justify-between lg:w-72 w-7/12 lg:mt-11 mt-5'>
-            <Image
-              width={150}
-              height={50}
-              alt='facebook'
-              style={{cursor:'pointer'}}
-              className='lg:w-16 w-10'
-              src='images/icons/facebook.svg' 
-            />
-            <Image
-              width={150}
-              height={50}
-              alt='linkin'
-              style={{cursor:'pointer'}}
-              className='lg:w-16 w-10'
-              src='images/icons/linkin.svg' 
-            />
-            <Image
-              width={150}
-              height={50}
-              alt='whatsapp'
-              style={{cursor:'pointer'}}
-              className='lg:w-16 w-10'
-              src='images/icons/whatsapp.svg' 
-            />
+            <Link href={facebook}>
+              <Image
+                width={150}
+                height={50}
+                alt='facebook'
+                style={{cursor:'pointer'}}
+                className='lg:w-16 w-10'
+                src='images/icons/facebook.svg' 
+              />
+            </Link>
+            <Link href={linkin} >
+              <Image
+                width={150}
+                height={50}
+                alt='linkin'
+                style={{cursor:'pointer'}}
+                className='lg:w-16 w-10'
+                src='images/icons/linkin.svg' 
+              />
+            </Link>
+            <Link href={"https://wa.me/17865380760"}>
+              <Image
+                width={150}
+                height={50}
+                alt='whatsapp'
+                style={{cursor:'pointer'}}
+                className='lg:w-16 w-10'
+                src='images/icons/whatsapp.svg' 
+              />
+            </Link>
+            
           </div>
           <div className='lg:mt-20 mt-10' style={{ height:'1px',width:'100%',backgroundColor:'#808285'}}></div>
           <div className='flex lg:flex-row flex-col items-center justify-between w-full mb-10 lg:pt-10 p-10'>
